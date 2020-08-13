@@ -22,6 +22,7 @@
     CGRect previewRect = CGRectMake(30, 30, 180, 250);
     _recordView = [[LivePreview alloc] initWithFrame:previewRect];
     [self.view addSubview:_recordView];
+    
 }
 
 

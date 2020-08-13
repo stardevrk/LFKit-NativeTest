@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		004DE4DD24E5AC4500C8E8C8 /* Channel.m in Sources */ = {isa = PBXBuildFile; fileRef = 004DE4DC24E5AC4400C8E8C8 /* Channel.m */; };
+		004DE4F824E5B2A600C8E8C8 /* libmbl2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 004DE4F424E5B2A600C8E8C8 /* libmbl2.a */; };
 		00E4989A24E07B2800832305 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E4989924E07B2800832305 /* AppDelegate.m */; };
 		00E498A024E07B2800832305 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E4989F24E07B2800832305 /* ViewController.m */; };
 		00E498A324E07B2800832305 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00E498A124E07B2800832305 /* Main.storyboard */; };
@@ -39,6 +41,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		004DE4DB24E5AC4400C8E8C8 /* Channel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Channel.h; sourceTree = "<group>"; };
+		004DE4DC24E5AC4400C8E8C8 /* Channel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Channel.m; sourceTree = "<group>"; };
+		004DE4F124E5B2A600C8E8C8 /* ConnectionConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionConfig.h; sourceTree = "<group>"; };
+		004DE4F224E5B2A600C8E8C8 /* StreamerEngineProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreamerEngineProxy.h; sourceTree = "<group>"; };
+		004DE4F324E5B2A600C8E8C8 /* AudioEncoderConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioEncoderConfig.h; sourceTree = "<group>"; };
+		004DE4F424E5B2A600C8E8C8 /* libmbl2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmbl2.a; sourceTree = "<group>"; };
+		004DE4F524E5B2A600C8E8C8 /* SrtConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SrtConfig.h; sourceTree = "<group>"; };
+		004DE4F624E5B2A600C8E8C8 /* VideoEncoderConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoEncoderConfig.h; sourceTree = "<group>"; };
+		004DE4F724E5B2A600C8E8C8 /* StreamerEngineDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreamerEngineDelegate.h; sourceTree = "<group>"; };
 		00E4989524E07B2800832305 /* PARtmp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PARtmp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E4989824E07B2800832305 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		00E4989924E07B2800832305 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -73,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				004DE4F824E5B2A600C8E8C8 /* libmbl2.a in Frameworks */,
 				8A227F97385C924C07536BEC /* Pods_PARtmp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,6 +108,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		004DE4E024E5AEC500C8E8C8 /* mbl */ = {
+			isa = PBXGroup;
+			children = (
+				004DE4F324E5B2A600C8E8C8 /* AudioEncoderConfig.h */,
+				004DE4F124E5B2A600C8E8C8 /* ConnectionConfig.h */,
+				004DE4F424E5B2A600C8E8C8 /* libmbl2.a */,
+				004DE4F524E5B2A600C8E8C8 /* SrtConfig.h */,
+				004DE4F724E5B2A600C8E8C8 /* StreamerEngineDelegate.h */,
+				004DE4F224E5B2A600C8E8C8 /* StreamerEngineProxy.h */,
+				004DE4F624E5B2A600C8E8C8 /* VideoEncoderConfig.h */,
+			);
+			path = mbl;
+			sourceTree = "<group>";
+		};
 		00E4988C24E07B2800832305 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +147,7 @@
 		00E4989724E07B2800832305 /* PARtmp */ = {
 			isa = PBXGroup;
 			children = (
+				004DE4E024E5AEC500C8E8C8 /* mbl */,
 				00E4989824E07B2800832305 /* AppDelegate.h */,
 				00E4989924E07B2800832305 /* AppDelegate.m */,
 				00E4989E24E07B2800832305 /* ViewController.h */,
@@ -132,6 +159,8 @@
 				00E498AA24E07B4000832305 /* main.m */,
 				00E498CD24E081D300832305 /* LivePreview.h */,
 				00E498CE24E081D300832305 /* LivePreview.m */,
+				004DE4DB24E5AC4400C8E8C8 /* Channel.h */,
+				004DE4DC24E5AC4400C8E8C8 /* Channel.m */,
 			);
 			path = PARtmp;
 			sourceTree = "<group>";
@@ -418,6 +447,7 @@
 				00E498A024E07B2800832305 /* ViewController.m in Sources */,
 				00E4989A24E07B2800832305 /* AppDelegate.m in Sources */,
 				00E498CF24E081D300832305 /* LivePreview.m in Sources */,
+				004DE4DD24E5AC4500C8E8C8 /* Channel.m in Sources */,
 				00E498AB24E07B4000832305 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -596,6 +626,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PARtmp/mbl",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.birdiefire.decade;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -614,6 +648,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PARtmp/mbl",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.birdiefire.decade;
 				PRODUCT_NAME = "$(TARGET_NAME)";

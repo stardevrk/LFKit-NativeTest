@@ -22,6 +22,8 @@
 	<true/>
 	<key>NSCameraUsageDescription</key>
 	<string>App needs to access to your camera</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>App needs to access to your phone</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>App needs to access to your photo library</string>
 	<key>UILaunchStoryboardName</key>
